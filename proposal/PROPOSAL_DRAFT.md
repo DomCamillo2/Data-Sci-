@@ -4,7 +4,7 @@
 **Course:** Data Science for Linguists, Summer 2026  
 **Instructor:** Johannes Dellert  
 **Contributors:** Dominik Soballa, Luca Bouché  
-**Registration track:** Language Use *(recommended; change if you register elsewhere)*  
+**Registration track:** Language Use  
 **Deadline (proposal):** 31 August 2026  
 **Deadline (project):** 31 December 2026 (default)
 

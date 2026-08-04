@@ -26,11 +26,14 @@ A leaderboard / “SpaCy vs ChatGPT who wins” bake-off.
 ## Status
 
 - [x] Raw Kafka texts  
-- [x] SpaCy samples (300 sents/language) in `data/processed/`  
-- [x] Ollama + smoke annotation  
-- [ ] Full LLM annotation (notebook 02)  
-- [ ] Loci analysis DE/EN (notebook 03)  
-- [ ] Report (notebook 04)  
+- [x] SpaCy samples (300 sents/language)  
+- [x] Ollama + smoke/pilot annotation  
+- [x] Prep scripts + notebooks 01–04  
+- [ ] Full LLM annotation 300+300  
+- [ ] Loci analysis DE/EN  
+- [ ] Report + proposal submit  
+
+See `reports/PREP_STATUS.md`.
 
 ## Setup
 

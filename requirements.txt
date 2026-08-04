@@ -1,20 +1,40 @@
-pandas>=2.0
-numpy>=1.24
-matplotlib>=3.7
-seaborn>=0.13
-scipy>=1.10
-spacy>=3.7
-scikit-learn>=1.3
-jupyter>=1.0
-ipykernel>=6.0
-requests>=2.31
-click>=8.0
+blis==1.3.3
+catalogue==2.0.10
+click==8.4.2
+confection==1.3.3
+contourpy==1.3.3
+cycler==0.12.1
+cymem==2.0.13
+fonttools==4.63.0
+ipykernel==7.3.0
+joblib==1.5.3
+jupyter==1.1.1
+kiwisolver==1.5.0
+matplotlib==3.11.1
+murmurhash==1.0.15
+numpy==2.4.6
+pandas==3.0.5
+pillow==12.3.0
+preshed==3.0.13
+pydantic==2.13.4
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+requests==2.34.2
+scikit-learn==1.9.0
+scipy==1.17.1
+seaborn==0.13.2
+spacy==3.8.14
+srsly==2.5.3
+thinc==8.3.13
+threadpoolctl==3.6.0
+tqdm==4.70.0
+typer==0.27.1
+tzdata==2026.3
+wasabi==1.1.3
+weasel==1.0.0
 
-# Create env with Python >=3.10 (recommended):
-#   uv venv --python 3.11 .venv && source .venv/bin/activate
-#   uv pip install -r requirements.txt
-#   python -m spacy download de_core_news_md
-#   python -m spacy download en_core_web_md
-
-# LLM: local Ollama (see reports/LLM_CHOICE.md)
-#   ollama pull llama3.2:3b
+# SpaCy models (install via):
+# python -m spacy download de_core_news_md
+# python -m spacy download en_core_web_md
+de-core-news-md @ https://github.com/explosion/spacy-models/releases/download/de_core_news_md-3.8.0/de_core_news_md-3.8.0-py3-none-any.whl
+en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
