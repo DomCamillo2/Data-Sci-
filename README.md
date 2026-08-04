@@ -18,7 +18,9 @@ A leaderboard / “SpaCy vs ChatGPT who wins” bake-off.
 
 | Doc | Purpose |
 |-----|---------|
-| [`AGENTS.md`](AGENTS.md) | LLM / agent routing for this repo |
+| [`AGENTS.md`](AGENTS.md) | Project agent routing |
+| [`llms.txt`](llms.txt) | Course LLM entrypoint |
+| [`llm_corpus/INDEX.md`](llm_corpus/INDEX.md) | **All lecture slides as markdown** |
 | [`PLAN.md`](PLAN.md) | Topic lock + hypotheses |
 | [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) | Step-by-step execution |
 | [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Submit by **31 Aug 2026** |

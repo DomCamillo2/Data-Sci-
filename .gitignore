@@ -34,3 +34,7 @@ __pycache__/
 
 !data/processed/annotations_de.csv
 !data/processed/annotations_en.csv
+
+# Raw PDF dumps (local rebuild only)
+llm_corpus/raw/
+llm_corpus/raw_assignments/

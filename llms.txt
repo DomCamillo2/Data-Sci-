@@ -1,0 +1,22 @@
+# Data Science for Linguists — LLM entrypoint
+
+> Prefer markdown under `llm_corpus/` over PDFs.
+
+## Start here
+
+| Need | Path |
+|------|------|
+| Project agent rules | `AGENTS.md` |
+| Course agent rules | `COURSE_AGENTS.md` |
+| Lecture + assignment corpus | `llm_corpus/INDEX.md` |
+| Syllabus / project rules | `llm_corpus/COURSE_MAP.md` |
+| Heading router | `llm_corpus/TOPIC_INDEX.md` |
+| Graded project plan | `PLAN.md` |
+
+## Rules
+
+1. Open only the files needed for the current question.
+2. Cite `source_pdf` + `<!-- page:N -->`.
+3. Solutions only on request.
+4. Project framing: linguistic **loci** of annotation disagreement — not a model bake-off.
+5. SpaCy tokenizes; LLM must not re-tokenize.

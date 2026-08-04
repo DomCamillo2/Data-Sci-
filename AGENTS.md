@@ -6,6 +6,11 @@
 - Track: **Language Use** (corpus linguistics). Models are instruments.
 - Out of scope: bake-off claims, human gold, deps/NER, fine-tuning, multi-LLM cook-offs.
 
+## Course slides (LLM markdown)
+
+Full lecture + assignment text: [`llm_corpus/INDEX.md`](llm_corpus/INDEX.md)  
+Also: [`llms.txt`](llms.txt), [`COURSE_AGENTS.md`](COURSE_AGENTS.md).
+
 ## Doc map
 
 | File | Use |
@@ -22,9 +27,14 @@
 
 1. SpaCy tokenizes first; LLM returns one UPOS (+ lemma) per `tok_id`.
 2. Seed **42**; model **`llama3.2:3b`**; temperature 0.
-3. Prefer `scripts/run_llm_annotate.py` (resumable cache) over ad-hoc notebook loops for full runs.
-4. Analysis (notebook 03) leads with **per-UPOS loci** and DE vs EN profiles — not overall accuracy as the headline.
+3. Prefer `scripts/run_llm_annotate.py` (resumable cache) for full runs.
+4. Analysis (notebook 03) leads with **per-UPOS loci** and DE vs EN profiles.
 
-## Course context
+## Rebuild course corpus
 
-Parent workspace `../llm_corpus/` holds lecture/assignment extracts for LLM use.
+Needs PDFs in sibling `Vorlesungenslides/` (workspace parent):
+
+```bash
+.venv/bin/python scripts/rebuild_llm_corpus.py
+.venv/bin/python scripts/rebuild_assignments_md.py
+```
