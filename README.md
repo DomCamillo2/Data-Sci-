@@ -14,17 +14,18 @@ SpaCy and a local LLM are two automatic annotators — **instruments**, not the 
 
 A leaderboard / “SpaCy vs ChatGPT who wins” bake-off.
 
-## Quick links
+## LLM / agent entrypoints
 
-| Doc | Purpose |
-|-----|---------|
-| [`AGENTS.md`](AGENTS.md) | Project agent routing |
-| [`llms.txt`](llms.txt) | Course LLM entrypoint |
-| [`llm_corpus/INDEX.md`](llm_corpus/INDEX.md) | **All lecture slides as markdown** |
-| [`PLAN.md`](PLAN.md) | Topic lock + hypotheses |
-| [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) | Step-by-step execution |
-| [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Submit by **31 Aug 2026** |
-| [`reports/LLM_CHOICE.md`](reports/LLM_CHOICE.md) | Ollama `llama3.2:3b` |
+| What | Where |
+|------|--------|
+| **Full instructions for future LLMs** | [`AGENTS.md`](AGENTS.md) |
+| Short pointer | [`llms.txt`](llms.txt) |
+| Run & change log | [`reports/CHANGELOG_RUNS.md`](reports/CHANGELOG_RUNS.md) |
+| All lecture slides (markdown) | [`llm_corpus/INDEX.md`](llm_corpus/INDEX.md) |
+| Topic lock | [`PLAN.md`](PLAN.md) |
+| Proposal draft | [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) |
+| Prep checklist | [`reports/PREP_STATUS.md`](reports/PREP_STATUS.md) |
+| LLM choice | [`reports/LLM_CHOICE.md`](reports/LLM_CHOICE.md) |
 
 ## Status
 

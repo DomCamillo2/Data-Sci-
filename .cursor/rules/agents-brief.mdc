@@ -1,0 +1,14 @@
+---
+description: Mandatory agent brief for Data-Sci Kafka loci project + course corpus
+alwaysApply: true
+---
+
+# Future LLM / agent rules
+
+1. **Read `AGENTS.md` first**, then `reports/CHANGELOG_RUNS.md` and `reports/PREP_STATUS.md` before changing pipeline or framing.
+2. **Framing is locked:** linguistic loci of automatic annotation disagreement (Kafka DE/EN, Language Use). SpaCy + Ollama LLM are instruments — never lead with a model bake-off.
+3. **SpaCy tokenizes; LLM labels 1:1** (`tok_id`). Model: `llama3.2:3b`, T=0, sample seed 42. Do not edit `data/raw/`.
+4. **Full annotation** via `scripts/run_llm_annotate.py` (resumable). Analysis leads with per-UPOS loci + DE vs EN.
+5. **Course content:** use `llm_corpus/` markdown; cite `source_pdf` and `<!-- page:N -->`; solutions only on request.
+6. **After any trial or fix:** append `reports/CHANGELOG_RUNS.md`.
+7. Short pointer file: `llms.txt`.

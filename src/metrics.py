@@ -16,7 +16,9 @@ def normalize_upos(label: str) -> str:
 
 
 def normalize_lemma(lemma: str) -> str:
-    return (lemma or "").strip().lower()
+    if lemma is None or (isinstance(lemma, float) and pd.isna(lemma)):
+        return ""
+    return str(lemma).strip().lower()
 
 
 def upos_accuracy(ref: pd.Series, hyp: pd.Series) -> float:
