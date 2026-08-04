@@ -3,8 +3,8 @@
 | Field | Value |
 |-------|--------|
 | File | `grambank.csv` |
-| Local course path | `../../../assignment_07/grambank.csv` |
-| Project copy | symlink `data/raw/grambank.csv` → course file (immutable) |
+| Local course path | originally `assignment_07/grambank.csv` in course workspace |
+| Project copy | full copy of course `assignment_07/grambank.csv` (immutable; do not edit) |
 | Content | Wide table: Language, GB### features, Macroarea |
 | Features used | GB024 (numeral–noun order), GB025 (demonstrative–noun order), Macroarea |
 | Upstream project | [Grambank](https://grambank.clld.org/) |
