@@ -46,3 +46,9 @@ jupyter lab
 ```
 
 Random seed: **42** (fixed in `src/config.py`).
+
+## GitHub
+
+- **Private repo:** https://github.com/DomCamillo2/grambank-side-harmony  
+- Branch: `main` (tracking `origin/main`)  
+- Later: invite Dellert under Settings → Collaborators (or `gh repo invite …`)
