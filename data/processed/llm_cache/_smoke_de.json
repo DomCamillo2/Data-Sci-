@@ -1,0 +1,218 @@
+{
+  "language": "de",
+  "sent_id": 26,
+  "tokens": [
+    "Ein",
+    "kleines",
+    "Gelächter",
+    "im",
+    "Nebenzimmer",
+    "folgte",
+    ",",
+    "es",
+    "war",
+    "nach",
+    "dem",
+    "Klang",
+    "nicht",
+    "sicher",
+    ",",
+    "ob",
+    "nicht",
+    "mehrere",
+    "Personen",
+    "daran",
+    "beteiligt",
+    "waren",
+    "."
+  ],
+  "spacy_upos": [
+    "DET",
+    "ADJ",
+    "NOUN",
+    "ADP",
+    "NOUN",
+    "VERB",
+    "PUNCT",
+    "PRON",
+    "AUX",
+    "ADP",
+    "DET",
+    "NOUN",
+    "PART",
+    "ADV",
+    "PUNCT",
+    "SCONJ",
+    "PART",
+    "DET",
+    "NOUN",
+    "ADV",
+    "VERB",
+    "AUX",
+    "PUNCT"
+  ],
+  "llm": [
+    {
+      "tok_id": 0,
+      "upos": "PROPN",
+      "lemma": "Ein",
+      "upos_norm": "PROPN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 1,
+      "upos": "ADJ",
+      "lemma": "kleines",
+      "upos_norm": "ADJ",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 2,
+      "upos": "NOUN",
+      "lemma": "Gelächter",
+      "upos_norm": "NOUN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 3,
+      "upos": "ADV",
+      "lemma": "im",
+      "upos_norm": "ADV",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 4,
+      "upos": "PROPN",
+      "lemma": "Nebenzimmer",
+      "upos_norm": "PROPN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 5,
+      "upos": "VERB",
+      "lemma": "folgte",
+      "upos_norm": "VERB",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 6,
+      "upos": "PUNCT",
+      "lemma": ",",
+      "upos_norm": "PUNCT",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 7,
+      "upos": "PRON",
+      "lemma": "es",
+      "upos_norm": "PRON",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 8,
+      "upos": "VERB",
+      "lemma": "war",
+      "upos_norm": "VERB",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 9,
+      "upos": "ADV",
+      "lemma": "nach",
+      "upos_norm": "ADV",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 10,
+      "upos": "DET",
+      "lemma": "dem",
+      "upos_norm": "DET",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 11,
+      "upos": "NOUN",
+      "lemma": "Klang",
+      "upos_norm": "NOUN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 12,
+      "upos": "ADJ",
+      "lemma": "nicht",
+      "upos_norm": "ADJ",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 13,
+      "upos": "ADV",
+      "lemma": "sicher",
+      "upos_norm": "ADV",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 14,
+      "upos": "PUNCT",
+      "lemma": ",",
+      "upos_norm": "PUNCT",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 15,
+      "upos": "CCONJ",
+      "lemma": "ob",
+      "upos_norm": "CCONJ",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 16,
+      "upos": "ADJ",
+      "lemma": "nicht",
+      "upos_norm": "ADJ",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 17,
+      "upos": "NOUN",
+      "lemma": "mehrere",
+      "upos_norm": "NOUN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 18,
+      "upos": "NOUN",
+      "lemma": "Personen",
+      "upos_norm": "NOUN",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 19,
+      "upos": "PRON",
+      "lemma": "daran",
+      "upos_norm": "PRON",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 20,
+      "upos": "VERB",
+      "lemma": "beteiligt",
+      "upos_norm": "VERB",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 21,
+      "upos": "VERB",
+      "lemma": "waren",
+      "upos_norm": "VERB",
+      "upos_valid": true
+    },
+    {
+      "tok_id": 22,
+      "upos": "PUNCT",
+      "lemma": ".",
+      "upos_norm": "PUNCT",
+      "upos_valid": true
+    }
+  ],
+  "agreement": 0.5217391304347826
+}

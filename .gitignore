@@ -4,8 +4,15 @@ __pycache__/
 .DS_Store
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/tokens_de_sample.csv
+!data/processed/tokens_en_sample.csv
+!data/processed/llm_cache/
+data/processed/llm_cache/*
+!data/processed/llm_cache/_smoke_de.json
+
 figures/*
 !figures/.gitkeep
+!figures/01_upos_dist_sample.png
 *.pyc
 .pytest_cache/
 
