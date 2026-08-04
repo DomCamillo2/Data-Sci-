@@ -43,4 +43,4 @@ python scripts/run_data_prep.py   # regenerate samples if needed
 
 ## GitHub
 
-https://github.com/DomCamillo2/grambank-side-harmony *(rename recommended)*
+https://github.com/DomCamillo2/Data-Sci-
