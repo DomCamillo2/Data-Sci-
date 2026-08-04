@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+data/processed/*
+!data/processed/.gitkeep
+figures/*
+!figures/.gitkeep
+*.pyc
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
