@@ -1,53 +1,46 @@
-# Project: SpaCy vs LLM Annotation Agreement on Kafka
+# Linguistic loci of annotation disagreement (Kafka DE/EN)
 
-**Working title:** How strongly do SpaCy and an LLM agree on POS and lemmas in Kafka’s *Trial* (German vs English)?  
-**Course:** Data Science for Linguists (SoSe 2026) · Johannes Dellert  
-**Track:** Language Use / Language & Cognition / unrestricted (pick at registration)  
-**Grade target:** 1,0  
-**Topic code:** L1  
+**Team:** Dominik Soballa, Luca Bouché  
+**Course:** Data Science for Linguists (SoSe 2026)  
+**Track (recommended):** Language Use  
+
+## What this project is
+
+A **corpus-linguistics** study: where automatic POS/lemma annotation becomes unreliable in **literary** German and English (Kafka), and whether those **loci** differ across languages.
+
+SpaCy and a local LLM are two automatic annotators — **instruments**, not the research question.
+
+## What it is not
+
+A leaderboard / “SpaCy vs ChatGPT who wins” bake-off.
 
 ## Quick links
 
 | Doc | Purpose |
 |-----|---------|
-| [`PLAN.md`](PLAN.md) | Full 1,0 plan, critique, timeline |
-| [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Proposal (due **31 Aug 2026**) |
-| [`reports/L1_DEEP_DIVE.md`](reports/L1_DEEP_DIVE.md) | Thematic stress test |
-| [`reports/GRADE_RUBRIC.md`](reports/GRADE_RUBRIC.md) | Grading checklist |
-| [`reports/MISTAKES.md`](reports/MISTAKES.md) | Common mistakes |
+| [`PLAN.md`](PLAN.md) | Topic lock + hypotheses |
+| [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md) | Step-by-step execution |
+| [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Submit by **31 Aug 2026** |
+| [`reports/LLM_CHOICE.md`](reports/LLM_CHOICE.md) | Ollama `llama3.2:3b` |
 
-## Layout
+## Status
 
-```
-project/
-├── PLAN.md
-├── README.md
-├── requirements.txt
-├── proposal/
-├── data/raw/            # Kafka DE + EN (immutable)
-├── data/processed/      # sampled sentences, annotation tables
-├── notebooks/           # 01–04 analysis narrative
-├── src/                 # load, sample, align, metrics
-├── figures/
-├── reports/
-└── literature/
+- [x] Raw Kafka texts  
+- [x] SpaCy samples (300 sents/language) in `data/processed/`  
+- [x] Ollama + smoke annotation  
+- [ ] Full LLM annotation (notebook 02)  
+- [ ] Loci analysis DE/EN (notebook 03)  
+- [ ] Report (notebook 04)  
+
+## Setup
+
+```bash
+cd project
+source .venv/bin/activate   # Python 3.11 via uv
+# Ollama.app running; model: llama3.2:3b
+python scripts/run_data_prep.py   # regenerate samples if needed
 ```
 
 ## GitHub
 
-- **Private repo:** https://github.com/DomCamillo2/grambank-side-harmony  
-  (name is legacy; content is L1 — rename on GitHub if desired)  
-- Branch: `main`
-
-## Reproduce (after analysis exists)
-
-```bash
-cd project
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python -m spacy download de_core_news_md
-python -m spacy download en_core_web_md
-jupyter lab
-```
-
-Random seed: **42** (`src/config.py`).
+https://github.com/DomCamillo2/grambank-side-harmony *(rename recommended)*

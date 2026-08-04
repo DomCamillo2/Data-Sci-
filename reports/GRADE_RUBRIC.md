@@ -1,19 +1,13 @@
-# Grade Rubric — L1 SpaCy vs LLM (Session 12 mapping)
+# Grade Rubric — Linguistic loci framing (Session 12)
 
-| Area | Weak | Adequate | Strong (1,0 path) |
-|------|------|----------|-------------------|
-| RQ | “Test ChatGPT on Kafka” | Mentions POS | Agreement + DE/EN + categories |
-| Framing | SpaCy = truth | Vague “reference” | Explicit reference≠gold |
-| Design | Free LLM tokenize | Partial align | Fixed SpaCy tokens → JSON labels |
-| Hypotheses | None | H1 only | H1–H3 pre-registered |
-| Metrics | Screenshots | Accuracy only | Acc + κ + confusion + bootstrap |
-| Languages | EN only | Pooled DE+EN | Separate DE/EN tables |
-| Repro | Unpinned API | requirements only | Model IDs, T=0, seed, prompt in repo |
-| Limitations | Missing | Generic | Domain, dual error, scheme mapping |
-| Proposal fidelity | Extra tasks surprise | Minor drift | Matches proposal / logged amend |
+| Area | Weak | Strong (1,0 path) |
+|------|------|-------------------|
+| RQ | Model bake-off | Linguistic loci + DE/EN profile |
+| Track fit | Unclear | Language Use / corpus practice |
+| Hypotheses | Only overall accuracy | H1 loci, H2 cross-lingual, H3 structured disagreement |
+| Results narrative | “LLM got 70%” | Category maps + linguistic commentary |
+| Methods | Free tokenize | Fixed SpaCy tokens → JSON labels |
+| Repro | Unpinned ChatGPT | Ollama model id, seeds, requirements |
+| Proposal fidelity | Surprise bake-off metrics | Matches loci-first proposal |
 
-## Instructor signals
-
-- Replication / careful evaluation valued over novelty theatre.  
-- Stick to proposal.  
-- Reproducibility checklist = free points.
+Session 12 example projects are **language questions**; keep tools subordinate to that.

@@ -1,12 +1,10 @@
-# 01 — Data prep (SpaCy)
+# 01 Data prep
 
-**Status:** stub → convert to `01_data_prep.ipynb`
+Use `01_data_prep.ipynb` or:
 
-## Goals
+```bash
+source .venv/bin/activate
+python scripts/run_data_prep.py
+```
 
-1. Load `data/raw/kafka_1925_*.txt` via `src.spacy_pipeline.load_text`
-2. Run DE/EN SpaCy models; build token dataframes
-3. Sample `N_SENTENCES_PER_LANGUAGE` sentence ids (seed 42)
-4. Export to `data/processed/tokens_{de,en}_sample.csv`
-
-See `PLAN.md` Phase A.
+Samples: `data/processed/tokens_{de,en}_sample.csv` (300 sents each, seed 42).

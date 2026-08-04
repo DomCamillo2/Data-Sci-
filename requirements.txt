@@ -7,12 +7,14 @@ spacy>=3.7
 scikit-learn>=1.3
 jupyter>=1.0
 ipykernel>=6.0
+requests>=2.31
+click>=8.0
 
-# After pip install:
-# python -m spacy download de_core_news_md
-# python -m spacy download en_core_web_md
+# Create env with Python >=3.10 (recommended):
+#   uv venv --python 3.11 .venv && source .venv/bin/activate
+#   uv pip install -r requirements.txt
+#   python -m spacy download de_core_news_md
+#   python -m spacy download en_core_web_md
 
-# Optional LLM backends (pick one in the notebook; pin versions):
-# openai>=1.0
-# transformers>=4.40
-# ollama (external app)
+# LLM: local Ollama (see reports/LLM_CHOICE.md)
+#   ollama pull llama3.2:3b

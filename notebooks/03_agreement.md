@@ -1,13 +1,11 @@
-# 03 — Agreement analysis
+# 03 — Loci analysis
 
-**Status:** stub → convert to `03_agreement.ipynb`
+**Status:** stub → `03_agreement.ipynb` / rename to `03_loci_analysis.ipynb` when implementing
 
-## Goals
+## Goals (order matters)
 
-1. Merge SpaCy reference vs LLM hypotheses
-2. UPOS accuracy, Cohen’s κ, confusion matrices
-3. Lemma accuracy
-4. DE vs EN comparison (H2)
-5. Per-tag error rates (H3)
-6. Bootstrap CIs via `src.metrics.bootstrap_agreement`
-7. Save figures to `figures/`
+1. Per-UPOS disagreement rates (DE, EN) — **H1**
+2. Confusion pairs + linguistic example table — **H1**
+3. DE vs EN profile comparison — **H2**
+4. Overall acc/κ + bootstrap — **H3 summary only**
+5. Figures in `figures/` emphasizing loci, not a single scoreboard

@@ -1,10 +1,10 @@
-# Project Proposal (Draft) — L1
+# Project Proposal (Draft)
 
-**Title:** Agreement between SpaCy and an LLM on POS tags and lemmas in Kafka’s *The Trial* (German vs English)  
+**Title:** Linguistic loci of automatic annotation disagreement in literary German and English: Kafka’s *Trial*  
 **Course:** Data Science for Linguists, Summer 2026  
 **Instructor:** Johannes Dellert  
-**Contributors:** [NAME 1], [NAME 2]  
-**Registration track:** [Language Use / Language & Cognition / unrestricted]  
+**Contributors:** Dominik Soballa, Luca Bouché  
+**Registration track:** Language Use *(recommended; change if you register elsewhere)*  
 **Deadline (proposal):** 31 August 2026  
 **Deadline (project):** 31 December 2026 (default)
 
@@ -12,42 +12,42 @@
 
 ## 1. Introduction and research question
 
-Automatic linguistic annotation is a prerequisite for corpus-based work. Classical NLP pipelines such as **SpaCy** and, more recently, **large language models (LLMs)** can both assign part-of-speech tags and lemmas. These systems may diverge—especially on **literary** text, which differs from the news-like data many tools are associated with—and divergence may differ across languages.
+Corpus-based linguistics depends on **automatic annotation** (part of speech, lemmas). Literary language—here Franz Kafka’s *Der Prozess* / *The Trial*—differs from the news-like registers many tools are associated with. When two independent automatic annotators disagree, the interesting question for linguists is not “which system wins,” but **where in the grammar** disagreement concentrates, and whether that profile **differs between German and English**.
 
-We study Franz Kafka’s *Der Prozess* / *The Trial* (public-domain texts already used in this course). We treat SpaCy as a **reference annotator**, not as ground truth: both systems can err. The scientific contribution is a quantified **agreement profile**, not a claim that one system is “correct.”
+We use **SpaCy** and a **frozen local LLM** as two automatic annotators on the same tokens. Neither is treated as ground truth: disagreement marks **loci of annotation difficulty** (ambiguity, domain effects, morphology, naming, etc.), which matters for anyone using automatic labels in literary corpus work.
 
 **Research question:**  
-How strongly do SpaCy and a frozen LLM agree on Universal POS (UPOS) tags and lemmas in German and English Kafka, and does agreement differ by language and by POS category?
+In a literary Kafka corpus, which **linguistic categories** (UPOS; secondarily lemmas) show the strongest automatic-annotation disagreement between SpaCy and an LLM—and does this **disagreement profile** differ between German and English?
 
 ---
 
 ## 2. Objective
 
-1. Build aligned token-level annotations from SpaCy and one LLM on a sampled sentence set (DE + EN).  
-2. Estimate overall UPOS agreement and Cohen’s κ (H1).  
-3. Compare agreement between German and English (H2).  
-4. Localise disagreement via confusion / per-tag error rates (H3).  
-5. Quantify uncertainty with bootstrap confidence intervals over sentences.
+1. Build token-aligned automatic annotations (SpaCy + LLM) on sampled DE/EN Kafka sentences.  
+2. Quantify overall disagreement / agreement as a baseline (not as a model contest).  
+3. Map **linguistic loci** of disagreement (per UPOS; top confusion pairs) — primary scientific contribution.  
+4. Contrast the German vs English disagreement profiles.  
+5. Report uncertainty (bootstrap over sentences) and limitations for corpus practice.
 
 ---
 
 ## 3. Preliminary literature and resources
 
-**Course / tools**
+**Course anchors**
 
-- Session 04 (linguistic preprocessing), Assignment 03 (Kafka + SpaCy models `de_core_news_md`, `en_core_web_md`)  
-- Session 08/11 ideas: evaluation metrics, resampling for uncertainty  
-- Session 12: reproducibility, proposal fidelity  
+- Session 04 / Assignment 03: SpaCy on these Kafka texts (`de_core_news_md`, `en_core_web_md`)  
+- Session 11: resampling / uncertainty  
+- Session 12: Language Use = corpus linguistics; reproducibility; proposal fidelity  
 
 **Background themes**
 
-- Domain shift and literary NLP (pipelines evaluated on narrative German; e.g. literary processing work such as LLpro / related evaluations)  
-- POS evaluation caveats: annotation scheme mismatch and cross-resource divergence (UD-related discussions)  
-- Emerging practice of LLMs as annotators — we position our study as a **controlled agreement** study with fixed tokenization  
+- Literary / narrative NLP and domain shift (e.g. literary German pipeline evaluations such as LLpro-related work)  
+- POS annotation difficulty and scheme/category effects (UD evaluation discussions)  
+- LLMs as additional automatic annotators — used here as a **second independent label source**, not as the research object  
 
 **Data**
 
-- `kafka_1925_der-prozess.txt`, `kafka_1925_the-trial.txt` (Project Gutenberg / course materials)
+- `kafka_1925_der-prozess.txt`, `kafka_1925_the-trial.txt` (course / Project Gutenberg materials)
 
 ---
 
@@ -55,30 +55,29 @@ How strongly do SpaCy and a frozen LLM agree on Universal POS (UPOS) tags and le
 
 ### In scope
 
-- Languages: German + English Kafka texts above  
-- SpaCy models as in Assignment 03 (versions pinned in the notebook)  
-- One LLM (pinned model ID; temperature 0)  
-- Tasks: **UPOS** (primary), **lemma** (secondary)  
-- Sampled sentences (~300 per language, random seed 42; stratification by chapter if feasible)  
-- Metrics: accuracy vs SpaCy, Cohen’s κ, confusion / per-tag rates, DE vs EN contrast, bootstrap CIs  
+- Literary German + English Kafka samples  
+- Two automatic annotators: SpaCy (course models) + one pinned local LLM (Ollama `llama3.2:3b`, temperature 0)  
+- Primary analysis: **UPOS disagreement by category** and **DE vs EN profile contrast**  
+- Secondary: lemma string agreement  
+- Sample ~300 sentences/language (seed 42); fixed SpaCy tokenization  
+- Metrics: category-wise disagreement rates, confusion pairs, overall agreement/κ as summary, bootstrap CIs  
 
 ### Out of scope
 
+- Declaring a “better” model or leaderboard-style bake-off as the main claim  
 - Human gold annotation  
-- Dependency parsing, NER, coreference, sentiment  
-- Fine-tuning or training new models  
-- Claims that the LLM (or SpaCy) is factually correct  
-- Annotating the entire novel via paid API by default  
+- Dependencies, NER, sentiment, fine-tuning  
+- Full-novel commercial API runs  
 
-**Reasons:** time budget; methodological validity (alignment); proposal adherence.
+**Reasons:** align with Language Use / corpus questions; keep methods valid (1:1 token alignment); time budget.
 
 ---
 
 ## 5. Hypotheses
 
-- **H1:** Token-level UPOS agreement with SpaCy is substantially above chance/majority baseline, but below near-perfect ceiling on this literary sample.  
-- **H2:** Agreement rates differ between the German and English samples.  
-- **H3:** Disagreements are uneven across UPOS tags (concentrated in categories such as proper nouns or auxiliary/verb distinctions).
+- **H1 (loci):** Disagreement is **uneven across UPOS categories**—higher for categories often hard in literary text (e.g. PROPN, AUX/VERB, ambiguous open-class items) than for closed-class / punctuation.  
+- **H2 (cross-lingual):** The **category-wise disagreement profile** differs between German and English (e.g. morphology/compounds affecting German differently).  
+- **H3 (baseline):** Overall token agreement is above chance but below ceiling—confirming non-trivial but structured disagreement rather than random noise.
 
 ---
 
@@ -86,28 +85,24 @@ How strongly do SpaCy and a frozen LLM agree on Universal POS (UPOS) tags and le
 
 ### Data preparation
 
-- Load raw texts; replace newlines with spaces (Assignment 03).  
-- Run SpaCy sentence segmentation and tokenization.  
-- Draw the sentence sample; store SpaCy `token` / `upos` / `lemma` tables.
+- Load texts; newlines → spaces (Assignment 03).  
+- SpaCy sentence split + tokenization; sample sentences; export token tables.
 
-### LLM annotation (critical design choice)
+### Second annotator (LLM)
 
-- **SpaCy tokenization is fixed.** The LLM receives an ordered list of tokens and must return one UPOS (and lemma) per index (structured JSON).  
-- Free re-tokenization by the LLM is disallowed to avoid spurious disagreement.  
-- Invalid / non-UPOS labels mapped to `OTHER` and reported.
+- **SpaCy tokens are fixed.** LLM returns one UPOS (+ lemma) per token index (JSON).  
+- No free re-tokenization. Invalid tags → `OTHER` (reported).
 
-### Analysis
+### Analysis (linguistic emphasis)
 
-- Overall and per-language UPOS agreement + κ  
-- Confusion matrices / top disagreement pairs  
-- Lemma match rate (normalized strings)  
-- Bootstrap CIs for agreement (resample sentences)  
+1. Per-UPOS disagreement rates and confusion pairs (**H1**)  
+2. Compare DE vs EN category profiles (**H2**)  
+3. Overall agreement/κ + bootstrap CIs as summary (**H3**)  
+4. Qualitative examples of disagreement with linguistic commentary  
 
-### Work split (two contributors)
+### Collaboration
 
-- Contributor A: SpaCy pipeline, sampling, metric code  
-- Contributor B: LLM prompting, caching, error qualitative examples  
-- Joint: interpretation, limitations, final notebook narrative  
+Dominik Soballa and Luca Bouché work jointly on all parts; equal shared responsibility.
 
 ---
 
@@ -115,27 +110,28 @@ How strongly do SpaCy and a frozen LLM agree on Universal POS (UPOS) tags and le
 
 | Period | Work |
 |--------|------|
-| Aug (→ 31) | Finalize & submit proposal; pin tool versions |
-| Sep | Data prep, SpaCy annotations, sample export |
-| Oct | LLM annotation + agreement analyses + figures |
-| Nov | Report notebook, README, requirements, GitHub cleanup |
+| Aug (→ 31) | Finalize & submit proposal |
+| Sep | SpaCy samples frozen; start LLM annotation |
+| Oct | Full annotation; loci analysis + DE/EN contrast |
+| Nov | Report notebook (linguistic interpretation) + packaging |
 | Dec | Buffer / supervisor feedback |
 
-Any method not listed here needs a written amendment before entering the graded deliverable.
+Amendments to methods require a short written note before changing the graded deliverable.
 
 ---
 
 ## 8. Expected outcomes
 
-- Numeric agreement profile (DE vs EN) with uncertainty.  
-- A map of high- vs low-agreement UPOS categories.  
-- Practical takeaway for linguists: when SpaCy and LLM labels are interchangeable for coarse corpus counts—and when they are not.
+- A **map of linguistic loci** where automatic annotators diverge in literary DE/EN Kafka.  
+- Evidence whether German and English show **different disagreement profiles**.  
+- Practical takeaway: for which categories automatic labels are safer to trust for coarse literary corpus counts.
 
-**If agreement is unexpectedly high or low:** we still report the estimate with CIs and discuss domain, model, and reference limitations—that remains a successful project outcome.
+**If overall agreement is high:** loci analysis may still reveal residual hard categories—still a valid result.  
+**If agreement is low:** we interpret structured vs unstructured disagreement and discuss domain/morphology—not “LLM failed.”
 
 ---
 
 ## Sign-off
 
-Contributors: _________________ / _________________ Date: _________  
+Contributors: Dominik Soballa / Luca Bouché Date: _________  
 Submitted to supervisor: _________ Feedback received: _________

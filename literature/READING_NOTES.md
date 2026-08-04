@@ -1,22 +1,18 @@
-# Reading notes — L1
+# Reading notes
 
-## Must frame correctly
+## Framing for Dellert / Language Use
 
-- This is **annotator agreement / reference comparison**, not gold-standard evaluation.
-- Tokenization must be controlled or scores are meaningless.
+- Primary: automatic annotation reliability in **literary corpus** work  
+- Secondary: modern second annotator (LLM)  
+- Not: system bake-off as Schein topic  
 
-## Course anchors
+## Course
 
-- Assignment 03 + Session 04 (SpaCy on Kafka)
-- Session 11 (bootstrap / inference caution)
-- Session 12 (proposal, reproducibility)
+- Session 12 Language Use: corpus linguistics  
+- Assignment 03 / Session 04: Kafka + SpaCy  
+- Session 11: bootstrap  
 
-## Optional external pointers
+## Optional external
 
-- Literary German NLP evaluation (e.g. LLpro / Konvens literary pipeline comparisons)
-- UD / POS evaluation divergence literature (scheme mismatch)
-- Broader “LLM-as-annotator” blog/papers — cite cautiously; emphasise your controlled design
-
-## Fill before submission
-
-Exact SpaCy version, model hashes if available, LLM model ID + date, prompt text path.
+- Literary German NLP evaluation (domain shift)  
+- UD / POS category difficulty discussions  
