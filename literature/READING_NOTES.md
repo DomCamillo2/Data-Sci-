@@ -1,14 +1,22 @@
-# Reading notes (short)
+# Reading notes — L1
 
 ## Must frame correctly
-- Side-harmony (same side of N) ≠ Universal 20 (relative Dem-Num-Adj order).
-- Primary empirical tradition: Dryer / WALS numeral–noun & demonstrative–noun order.
 
-## Cite in proposal/notebook
-- Grambank feature pages GB024, GB025 (coding procedure).
-- Dryer WALS chapters (numeral; demonstrative).
-- Optional: Dryer 1992 Language (Greenbergian correlations) for background.
-- Optional contrast: Cinque 2005 / Dryer 2018 — only to demarcate what we are *not* testing.
+- This is **annotator agreement / reference comparison**, not gold-standard evaluation.
+- Tokenization must be controlled or scores are meaningless.
 
-## Methods
-- Course Sessions 07 (models), 11 (bootstrap / inference pitfalls), 12 (project norms).
+## Course anchors
+
+- Assignment 03 + Session 04 (SpaCy on Kafka)
+- Session 11 (bootstrap / inference caution)
+- Session 12 (proposal, reproducibility)
+
+## Optional external pointers
+
+- Literary German NLP evaluation (e.g. LLpro / Konvens literary pipeline comparisons)
+- UD / POS evaluation divergence literature (scheme mismatch)
+- Broader “LLM-as-annotator” blog/papers — cite cautiously; emphasise your controlled design
+
+## Fill before submission
+
+Exact SpaCy version, model hashes if available, LLM model ID + date, prompt text path.

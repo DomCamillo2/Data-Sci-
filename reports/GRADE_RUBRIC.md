@@ -1,23 +1,19 @@
-# Grade Rubric — Mapped to Session 12
+# Grade Rubric — L1 SpaCy vs LLM (Session 12 mapping)
 
-Use before submission. Target: every row “strong”.
+| Area | Weak | Adequate | Strong (1,0 path) |
+|------|------|----------|-------------------|
+| RQ | “Test ChatGPT on Kafka” | Mentions POS | Agreement + DE/EN + categories |
+| Framing | SpaCy = truth | Vague “reference” | Explicit reference≠gold |
+| Design | Free LLM tokenize | Partial align | Fixed SpaCy tokens → JSON labels |
+| Hypotheses | None | H1 only | H1–H3 pre-registered |
+| Metrics | Screenshots | Accuracy only | Acc + κ + confusion + bootstrap |
+| Languages | EN only | Pooled DE+EN | Separate DE/EN tables |
+| Repro | Unpinned API | requirements only | Model IDs, T=0, seed, prompt in repo |
+| Limitations | Missing | Generic | Domain, dual error, scheme mapping |
+| Proposal fidelity | Extra tasks surprise | Minor drift | Matches proposal / logged amend |
 
-| Area | Weak (≤3) | Adequate (~2) | Strong (1,0 path) |
-|------|-----------|---------------|-------------------|
-| RQ | Vague / multiple questions | Clear but variables fuzzy | One RQ; GB024/025/Macroarea named |
-| Theory | Calls it U20 / Cinque claim | Mentions Dryer vaguely | Explicit side-harmony ≠ U20 |
-| Hypotheses | None / post-hoc | H1 only | H1+H2 pre-registered; H3 labeled secondary |
-| Proposal fidelity | Surprise analyses | Minor drift unexplained | Matches proposal or logged amendment |
-| Data hygiene | Edited “raw”; unclear N | N reported late | Provenance + exclusion table first |
-| Stats | p-hacking / only accuracy | χ² only | OR + CI + stratified + bootstrap |
-| Viz | Decoration | One bar chart | Contingency + areal comparison |
-| Limitations | Missing | Generic “more data needed” | Galton, coding, both.-bias, areal proxy |
-| Reproducibility | “works on my machine” | requirements without versions | Seeds + pinned deps + README |
-| Writing | Code dump | Sparse Markdown | Narrative answers RQ in order |
+## Instructor signals
 
-## Instructor signals (Session 12)
-
-- Novelty **not** required; replication valued.  
-- Graded projects: **stick to proposal**.  
-- Reproducibility checklist is explicit course content — treat as free points.  
-- Submission via GitHub invite is accepted.
+- Replication / careful evaluation valued over novelty theatre.  
+- Stick to proposal.  
+- Reproducibility checklist = free points.

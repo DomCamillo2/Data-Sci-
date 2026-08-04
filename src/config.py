@@ -1,17 +1,35 @@
-# Random seed and paths
+"""Global constants for the Kafka SpaCy vs LLM agreement project."""
+
 RANDOM_SEED = 42
 
-# Columns
-COL_LANGUAGE = "Language"
-COL_MACROAREA = "Macroarea"
-COL_NUM = "GB024"
-COL_DEM = "GB025"
+# Approximate sample size per language (proposal default)
+N_SENTENCES_PER_LANGUAGE = 300
 
-# Primary sample: unique unmarked orders only
-STRICT_NUM = {"Num-N", "N-Num"}
-STRICT_DEM = {"Dem-N", "N-Dem"}
+SPACY_MODEL_DE = "de_core_news_md"
+SPACY_MODEL_EN = "en_core_web_md"
 
-HARMONIOUS = {
-    ("Num-N", "Dem-N"),
-    ("N-Num", "N-Dem"),
-}
+# Universal POS tagset (UD); LLM outputs must map into this set
+UPOS_TAGS = frozenset(
+    {
+        "ADJ",
+        "ADP",
+        "ADV",
+        "AUX",
+        "CCONJ",
+        "DET",
+        "INTJ",
+        "NOUN",
+        "NUM",
+        "PART",
+        "PRON",
+        "PROPN",
+        "PUNCT",
+        "SCONJ",
+        "SYM",
+        "VERB",
+        "X",
+    }
+)
+
+RAW_DE = "data/raw/kafka_1925_der-prozess.txt"
+RAW_EN = "data/raw/kafka_1925_the-trial.txt"

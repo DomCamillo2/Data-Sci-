@@ -1,5 +1,7 @@
-# 04_report
+# 04 — Report narrative
 
-Status: stub — convert to `04_report.ipynb` when starting analysis.
+**Status:** stub → convert to `04_report.ipynb`
 
-See `../PLAN.md` Phase A for required content.
+## Goals
+
+Markdown-first notebook that answers H1–H3 with figures, states limitations (reference≠gold, literary domain, model pinning), and mirrors the approved proposal.

@@ -1,39 +1,43 @@
-# Project: Numeral–Demonstrative Side-Harmony in Grambank
+# Project: SpaCy vs LLM Annotation Agreement on Kafka
 
-**Working title:** How robust is numeral–demonstrative side-harmony in Grambank?  
+**Working title:** How strongly do SpaCy and an LLM agree on POS and lemmas in Kafka’s *Trial* (German vs English)?  
 **Course:** Data Science for Linguists (SoSe 2026) · Johannes Dellert  
-**Track:** Variation, Evolution & Change (or unrestricted graded Schein)  
+**Track:** Language Use / Language & Cognition / unrestricted (pick at registration)  
 **Grade target:** 1,0  
-**Data policy:** no new data collection — public Grambank only  
+**Topic code:** L1  
 
 ## Quick links
 
 | Doc | Purpose |
 |-----|---------|
-| [`PLAN.md`](PLAN.md) | Full 1,0 research plan, critique, mistakes, timeline |
-| [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Proposal text (due **31 Aug 2026**) |
-| [`reports/GRADE_RUBRIC.md`](reports/GRADE_RUBRIC.md) | What the instructor actually grades |
-| [`reports/MISTAKES.md`](reports/MISTAKES.md) | Common mistakes checklist |
+| [`PLAN.md`](PLAN.md) | Full 1,0 plan, critique, timeline |
+| [`proposal/PROPOSAL_DRAFT.md`](proposal/PROPOSAL_DRAFT.md) | Proposal (due **31 Aug 2026**) |
+| [`reports/L1_DEEP_DIVE.md`](reports/L1_DEEP_DIVE.md) | Thematic stress test |
+| [`reports/GRADE_RUBRIC.md`](reports/GRADE_RUBRIC.md) | Grading checklist |
+| [`reports/MISTAKES.md`](reports/MISTAKES.md) | Common mistakes |
 
 ## Layout
 
 ```
 project/
-├── README.md
 ├── PLAN.md
+├── README.md
 ├── requirements.txt
-├── .gitignore
-├── proposal/           # graded planning artifact
-├── data/
-│   ├── raw/            # immutable originals (+ provenance)
-│   ├── processed/      # analysis-ready tables (generated)
-│   └── external/       # optional codebooks / citations only
-├── notebooks/          # narrative + figures (main deliverable)
-├── src/                # reusable functions (imported by notebooks)
-├── figures/            # exported plots for proposal/report
-├── reports/            # rubric, mistakes, final writeup notes
-└── literature/         # bib / reading notes
+├── proposal/
+├── data/raw/            # Kafka DE + EN (immutable)
+├── data/processed/      # sampled sentences, annotation tables
+├── notebooks/           # 01–04 analysis narrative
+├── src/                 # load, sample, align, metrics
+├── figures/
+├── reports/
+└── literature/
 ```
+
+## GitHub
+
+- **Private repo:** https://github.com/DomCamillo2/grambank-side-harmony  
+  (name is legacy; content is L1 — rename on GitHub if desired)  
+- Branch: `main`
 
 ## Reproduce (after analysis exists)
 
@@ -41,14 +45,9 @@ project/
 cd project
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+python -m spacy download de_core_news_md
+python -m spacy download en_core_web_md
 jupyter lab
-# open notebooks/01_data_prep.ipynb … 04_report.ipynb
 ```
 
-Random seed: **42** (fixed in `src/config.py`).
-
-## GitHub
-
-- **Private repo:** https://github.com/DomCamillo2/grambank-side-harmony  
-- Branch: `main` (tracking `origin/main`)  
-- Later: invite Dellert under Settings → Collaborators (or `gh repo invite …`)
+Random seed: **42** (`src/config.py`).

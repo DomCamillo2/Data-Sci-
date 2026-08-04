@@ -1,1 +1,1 @@
-# Package marker for imports from notebooks (add project/ to PYTHONPATH or pip install -e .)
+# Package marker for notebook imports (add project root to PYTHONPATH).

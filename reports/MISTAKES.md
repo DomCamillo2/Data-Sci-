@@ -1,38 +1,31 @@
-# Common Mistakes to Avoid
-
-Checklist — tick while writing notebooks and proposal.
+# Common Mistakes to Avoid — L1 Kafka SpaCy vs LLM
 
 ## Conceptual
 
-- [ ] **Do not** title or frame the project as Greenberg Universal 20.
-- [ ] **Do not** cite Cinque movement theory as what you are testing.
-- [ ] **Do not** claim discovery of a new universal.
-- [ ] **Do not** treat macroareas as independent language families.
+- [ ] Do **not** claim SpaCy is gold truth / the LLM is “wrong” when they differ.
+- [ ] Do **not** frame the project as proving LLMs replace NLP pipelines.
+- [ ] Do **not** interpret Kafka’s plot instead of measuring agreement.
 
-## Data
+## Alignment / annotation
 
-- [ ] **Do not** overwrite `data/raw/`.
-- [ ] **Do not** silently drop `both.` / NA without a count table.
-- [ ] **Do not** mix Assignment 04’s article features into the main RQ unless amending the proposal.
-- [ ] **Do not** “fix” Grambank values by hand.
+- [ ] Do **not** let the LLM re-tokenize (breaks comparison).
+- [ ] Do **not** mix STTS / coarse tags / English glosses into UPOS without mapping.
+- [ ] Do **not** silently drop tokens that fail to parse as JSON.
 
-## Statistics
+## Scope
 
-- [ ] **Do not** report only p-values.
-- [ ] **Do not** run 20 features and keep the significant ones (garden of forking paths).
-- [ ] **Do not** interpret global χ² as proof of a cognitive universal.
-- [ ] **Do not** ignore empty/sparse cells (switch to Fisher / collapse carefully).
-- [ ] **Do not** forget multiple related tests without stating that H2 is a planned heterogeneity check (not fishing).
+- [ ] Do **not** add dependencies, NER, coreference without proposal amendment.
+- [ ] Do **not** annotate the full novel via API unless explicitly amended + funded.
+- [ ] Do **not** run five different LLMs “for fun” (forking paths).
 
-## Project management
+## Stats / reporting
 
-- [ ] **Do not** add cool extra analyses that are absent from the proposal.
-- [ ] **Do not** wait until December to write Markdown narrative.
-- [ ] **Do not** submit without `requirements.txt` versions and a seed.
-- [ ] **Do not** put secrets, huge duplicates, or `.venv` in GitHub.
+- [ ] Do **not** pool DE+EN into one accuracy without also reporting separate scores.
+- [ ] Do **not** report only accuracy — include κ and error structure.
+- [ ] Do **not** skip uncertainty (bootstrap over sentences).
 
-## Presentation
+## Reproducibility
 
-- [ ] **Do not** leave the notebook as uncommented code cells.
-- [ ] **Do not** bury the answer to the RQ at the end without a short conclusion up front.
-- [ ] **Do not** skip a limitations section — for this topic it is part of the contribution.
+- [ ] Do **not** leave model name as “ChatGPT” without version/ID.
+- [ ] Do **not** use temperature &gt; 0 for the main run.
+- [ ] Do **not** edit `data/raw/` texts.

@@ -1,7 +1,7 @@
-# Full Plan for a 1,0 — Grambank Side-Harmony Robustness
+# Full Plan for a 1,0 — L1 SpaCy vs LLM on Kafka
 
-Role of this document: research + data-science operating plan.  
-Framing decision (locked): **A1 — robustness of side-harmony**, not naive “does harmony exist?” and not Greenberg Universal 20.
+Locked topic after thematic deep dive (`reports/L1_DEEP_DIVE.md`).  
+Former Grambank side-harmony plan is **abandoned**.
 
 ---
 
@@ -9,193 +9,159 @@ Framing decision (locked): **A1 — robustness of side-harmony**, not naive “d
 
 | Item | Decision |
 |------|----------|
-| Question | How **stable** is Num/Dem **side-harmony** (GB024 × GB025) in Grambank under coding rules and areal structure? |
-| Design | Confirmatory replication + sensitivity analysis |
-| Data | `grambank.csv` only (already in course materials) |
-| Success for 1,0 | Clear RQ/H, proposal adhered to, correct stats, honest limitations, full reproducibility |
-| Non-goals | Novelty for its own sake; phylogenetics; scraping; surveys; deep learning |
-
-Session 12 grades **result quality + fidelity to the proposal**. Scope control beats ambition.
+| Question | How strongly do SpaCy and a frozen LLM agree on **UPOS** (and **lemmas**) in Kafka DE/EN, and where do they diverge? |
+| Design | Reference-agreement study (SpaCy ≠ truth) |
+| Data | `kafka_1925_der-prozess.txt`, `kafka_1925_the-trial.txt` |
+| Success for 1,0 | Clear RQ/H, fixed tokenization, pinned models, metrics + limitations, proposal fidelity |
+| Non-goals | Human gold, deps/NER, fine-tuning, “LLM is better”, full-book API runs |
 
 ---
 
-## 1. Scientific framing (get this right)
+## 1. Scientific framing
 
-### 1.1 What we claim
+### Claim
 
-**Side-harmony:** languages tend to place numeral and adnominal demonstrative on the **same side** of the noun:
+Measure **system agreement** between:
 
-| Harmonious | Disharmonious |
-|------------|---------------|
-| Num-N + Dem-N | Num-N + N-Dem |
-| N-Num + N-Dem | N-Num + Dem-N |
+1. SpaCy pipelines (`de_core_news_md`, `en_core_web_md`)  
+2. One frozen LLM prompted to label **pre-tokenized** tokens
 
-Pilot on course file (strict orders, N≈1700): ~**76%** harmonious; by macroarea **65–89%**.
+on literary text in two languages.
 
-### 1.2 What we do **not** claim
+### Non-claim
 
-- **Not** Greenberg Universal 20 (relative Dem–Num–Adj order on one side of N).  
-  GB024/GB025 do not encode that sequence.
-- **Not** a Cinque-style movement analysis.
-- **Not** “we discovered a new universal.”
+- Not Universal 20 / typology  
+- Not proof that either system is correct  
+- Not a chatbot or generation demo  
 
-### 1.3 Hypotheses (proposal language)
+### Hypotheses
 
-- **H1:** Harmonious cells are more frequent than expected under independence of GB024 and GB025.
-- **H2:** Association strength varies across macroareas.
-- **H3 (secondary, optional if listed in proposal):** Macroarea accounts for a non-trivial share of the apparent association (logit / stratified comparison).
-
-Null / “failed” outcome is still a valid grade path if argued cleanly.
+- **H1:** UPOS agreement ≫ chance / majority baseline, but below ceiling on literary text.  
+- **H2:** Agreement differs between German and English.  
+- **H3:** Disagreement concentrates in specific UPOS tags (e.g. PROPN, AUX/VERB).
 
 ---
 
-## 2. What the instructor grades (Session 12)
+## 2. What Dellert grades (Session 12)
 
-| Criterion | How to hit 1,0 |
+| Criterion | How L1 hits it |
 |-----------|----------------|
-| Research question clarity | One sentence RQ; variables named (GB024, GB025, Macroarea) |
-| Testable hypotheses | H1–H2 mandatory; H3 only if pre-registered in proposal |
-| Proposal adherence | Do exactly what the proposal promises; log justified deviations |
-| Methods from the course | Pandas wrangling, contingency / association, optional logistic regression, bootstrap (Session 11) |
-| Interpretation | Link results to RQ; cite Dryer/WALS-style typology, not overclaim |
-| Reproducibility | Raw archive, documented transforms, seeds, README, `requirements.txt` with versions |
-| Scope honesty | Explicit in/out; limitations section that anticipates Galton / areal confounding |
-| Deliverable | Jupyter notebook with Markdown narrative (+ GitHub invite) |
-
-Workload fiction: 90h/person on paper. Quality density matters more than padding.
+| Clear RQ | Agreement + DE/EN contrast named |
+| Testable H | H1–H3 pre-registered |
+| Proposal fidelity | Only UPOS+lemma (+ listed secondary) |
+| Course methods | SpaCy (S04), tables/plots, κ/confusion, bootstrap (S11) |
+| Reproducibility | Raw texts archived; model IDs; T=0; seed 42; requirements |
+| Limitations | Reference≠gold; literary domain; tokenization rule |
 
 ---
 
-## 3. Critique of weaker designs (why we rejected them)
+## 3. Critical design rules (non-negotiable)
 
-| Design | Failure mode |
-|--------|----------------|
-| A0: “Is there harmony?” | Trivial yes; looks like homework extension |
-| “Replicate U20 with GB024×GB025” | Conceptually false → credibility hit |
-| Full phylogenetic correction | Correct science, wrong scope for this course deadline |
-| Add many extra GB features | Multiple testing + proposal drift |
-| New online survey | Explicitly out; not needed for 1,0 |
+1. **SpaCy tokenizes; LLM only labels** that token list (JSON 1:1).  
+2. **UPOS only** as primary tagset (map LLM output; invalid → `OTHER`).  
+3. **Sample** sentences (e.g. 300/language), not the whole novel by default.  
+4. **One LLM**, one prompt version, temperature 0.  
+5. Report **DE and EN separately**.
+
+Violating (1) breaks the evaluation.
 
 ---
 
-## 4. End-to-end work plan
+## 4. Work plan
 
-### Phase P — Proposal (now → **31 Aug 2026**) — critical path
+### Phase P — Proposal (→ 31 Aug 2026)
 
-| Step | Deliverable | Done when |
-|------|-------------|-----------|
-| P1 | Lock title, contributors, track | Written in `proposal/PROPOSAL_DRAFT.md` |
-| P2 | Write all 8 Session-12 proposal sections | Self-check against rubric |
-| P3 | Freeze scope table (in/out) | No “if time” items that aren’t labeled secondary |
-| P4 | Week-by-week plan through Dec | Realistic; AI-assisted coding assumed |
-| P5 | Submit to Dellert; wait one feedback round | File `proposal/FEEDBACK.md` with responses |
-| P6 | If major revision required | Re-approve before expanding analysis |
+| Step | Deliverable |
+|------|-------------|
+| P1 | Fill contributors + track in proposal |
+| P2 | Submit `proposal/PROPOSAL_DRAFT.md` (export PDF if required) |
+| P3 | Log supervisor feedback in `proposal/FEEDBACK.md` |
 
-**Rule:** After approval, treat proposal as contract.
-
-### Phase D — Data contract
+### Phase D — Data
 
 | Step | Action |
 |------|--------|
-| D1 | Copy/symlink immutable raw CSV → `data/raw/` |
-| D2 | Write `data/raw/PROVENANCE.md` (source, date, license/citation) |
-| D3 | Document feature definitions (GB024, GB025) from grambank.clld.org |
-| D4 | Define inclusion rules in `src/filters.py` (strict vs `both.`) |
-| D5 | Never edit raw files; only write `data/processed/` |
+| D1 | Keep raw Kafka texts immutable under `data/raw/` |
+| D2 | SpaCy sentence split + token tables → `data/processed/` |
+| D3 | Draw stratified sample (seed 42) → `sample_sentences_{de,en}.csv` |
 
-### Phase A — Analysis (notebooks)
+### Phase A — Analysis notebooks
 
-| Notebook | Purpose |
+| Notebook | Content |
 |----------|---------|
-| `01_data_prep.ipynb` | Load, tidy, filter counts, codebook |
-| `02_descriptive.ipynb` | Contingency, stacked bars, macroarea rates |
-| `03_inference.ipynb` | χ²/Fisher, odds ratios, stratified tests, bootstrap CIs; optional logit |
-| `04_report.ipynb` | Narrative tying H1–H3 to results + limitations |
+| `01_data_prep` | Load texts, SpaCy parse, sample, export token tables |
+| `02_llm_annotate` | Call LLM on token lists; cache outputs |
+| `03_agreement` | Accuracy, κ, confusion, DE vs EN, bootstrap CIs |
+| `04_report` | Narrative answering H1–H3 + limitations |
 
-Shared code lives in `src/` (no copy-paste of filter logic across notebooks).
+### Phase R — Submit
 
-### Phase R — Reproducibility & submission
-
-| Step | Artifact |
-|------|----------|
-| R1 | `requirements.txt` pinned versions |
-| R2 | `README.md` run instructions |
-| R3 | Seed = 42 everywhere stochastic |
-| R4 | Export key figures → `figures/` |
-| R5 | GitHub repo; invite supervisor |
-| R6 | Final pass: proposal checklist vs notebook TOC |
+README, pinned `requirements.txt`, figure exports, GitHub invite to supervisor.
 
 ---
 
-## 5. Methods specification (implement exactly this)
+## 5. Methods spec
 
-### 5.1 Sample definitions
+### SpaCy
 
-1. **Strict:** GB024 ∈ {Num-N, N-Num} and GB025 ∈ {Dem-N, N-Dem}.  
-2. **Sensitivity:** report how many languages are dropped for `both.` / missing; optional third analysis treating `both.` separately (descriptive only unless pre-registered).
+- DE: `de_core_news_md` · EN: `en_core_web_md` (same as Assignment 03)  
+- Replace newlines with spaces before parsing (Assignment 03 rule)  
+- Record package + model versions in notebook
 
-### 5.2 Primary tests
+### LLM
 
-- 2×2 or 2×2 harmony coding + full 2×2 of orders.
-- Odds ratio for same-side vs opposite-side.
-- χ² test of independence (report expected counts; if sparse cells → Fisher).
-- Effect size (OR + CI), not p-value alone.
+- Prefer pinned open model (local/HF) **or** documented API model ID + date  
+- Prompt: given ordered tokens, return UPOS (+ lemma) per index  
+- Temperature 0; refuse free tokenization  
 
-### 5.3 Robustness (this is the grade differentiator)
+### Metrics
 
-- Repeat association **within each macroarea**.
-- Bootstrap CI for global harmony rate and/or OR (Session 11).
-- Optional: logistic regression `harmony ~ 1` vs models with macroarea; or predict Dem side from Num side ± macroarea (only if H3 in proposal).
+- Token UPOS accuracy vs SpaCy  
+- Cohen’s κ  
+- Per-UPOS confusion / error rates  
+- Lemma match rate (normalized: lowercased lemma string)  
+- Bootstrap CI over sentences for agreement  
 
-### 5.4 What we acknowledge in Limitations
+### Sample (default proposal numbers — adjust only via amendment)
 
-- Languages are phylogenetically non-independent (Galton).
-- Macroarea is a coarse areal proxy, not a family tree.
-- Grammar coding uncertainty / missingness in Grambank.
-- Side-harmony ≠ Universal 20.
-
----
-
-## 6. Timeline (solo, AI-assisted)
-
-| Window | Focus | Hours (est.) |
-|--------|-------|--------------|
-| Now – 10 Aug | Proposal draft + folder freeze | 6–8 |
-| 11–31 Aug | Polish proposal, submit | 4–6 |
-| Sep (early) | Data prep + descriptive notebooks | 8–12 |
-| Sep (late) | Inference + bootstrap + stratif. | 10–14 |
-| Oct | Optional logit; figures; narrative | 8–10 |
-| Nov | Limitations, README, pin deps, GitHub | 6–8 |
-| Dec buffer | Supervisor questions / small fixes | 4+ |
-
-Total ~45–60h of real work if AI writes boilerplate — enough if every section is sharp.
+- ~300 sentences per language  
+- Stratify by chapter if chapter markers exist; else uniform with seed 42  
 
 ---
 
-## 7. Deliverables checklist (submission)
+## 6. Timeline (pair, AI-assisted)
 
-- [ ] Approved proposal (PDF/MD) matching final notebook
-- [ ] `data/raw/` + provenance
-- [ ] Notebooks 01–04 executable top-to-bottom
-- [ ] `src/` imported, not duplicated
-- [ ] `figures/` for main plots
-- [ ] `requirements.txt` with versions
-- [ ] README with run steps
-- [ ] Fixed seeds
-- [ ] Explicit limitations section
-- [ ] GitHub access for Dellert
+| Window | Focus |
+|--------|-------|
+| Now–10 Aug | Proposal finalize + team roles |
+| → 31 Aug | Submit proposal |
+| Sep | Data prep + SpaCy baselines + sample |
+| Oct | LLM annotation + agreement analyses |
+| Nov | Report notebook, limitations, pin deps |
+| Dec | Buffer / supervisor fixes |
+
+Suggested split: Partner A = SpaCy/data/metrics; Partner B = LLM prompting/caching; both = interpretation.
 
 ---
 
-## 8. Quality bar for 1,0 (self-exam)
+## 7. Deliverables checklist
 
-Before submit, answer yes to all:
+- [ ] Approved proposal matching notebook  
+- [ ] Raw Kafka + provenance  
+- [ ] Processed sample + annotation caches  
+- [ ] Notebooks 01–04 runnable  
+- [ ] `src/` shared (no duplicated filter logic)  
+- [ ] requirements + model download notes  
+- [ ] Seeds / T=0 / model IDs documented  
+- [ ] Limitations section  
+- [ ] GitHub access for Dellert  
 
-1. Could a typologist skim the intro and see we did **not** confuse U20 with side-harmony?  
-2. Does every analysis appear in the proposal (or a logged amendment)?  
-3. Are inclusion/exclusion counts reported before any p-value?  
-4. Do we report effect sizes + uncertainty, not only significance?  
-5. Do we show areal heterogeneity instead of hiding it?  
-6. Can a stranger re-run from README in &lt;30 minutes?
+---
 
-If any “no” → fix before calling it done.
+## 8. Pre-submit self-exam
+
+1. Does the intro say SpaCy is a **reference**, not gold?  
+2. Is tokenization fixed to SpaCy?  
+3. Are H1–H3 answered with numbers + figures?  
+4. Are DE and EN not pooled into one misleading accuracy?  
+5. Can a stranger re-run from README?
