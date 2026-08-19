@@ -108,3 +108,390 @@ de,46,5,und,CCONJ,und,CONJ,und,OTHER,True,
 de,46,6,warten,VERB,warten,VERB,warten,VERB,True,
 de,46,7,Sie,PRON,sie,PRON,Sie,PRON,True,
 de,46,8,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,47,0,Das,DET,der,PROPN,Das,PROPN,True,
+de,47,1,Verfahren,NOUN,Verfahren,NOUN,Verfahren,NOUN,True,
+de,47,2,ist,AUX,sein,VERB,ist,VERB,True,
+de,47,3,nun,ADV,nun,DET,nun,DET,True,
+de,47,4,einmal,ADV,einmal,ADV,einmal,ADV,True,
+de,47,5,eingeleitet,VERB,einleiten,VERB,eingeleitet,VERB,True,
+de,47,6,und,CCONJ,und,CONJ,und,OTHER,True,
+de,47,7,Sie,PRON,sie,PRON,Sie,PRON,True,
+de,47,8,werden,AUX,werden,VERB,werden,VERB,True,
+de,47,9,alles,PRON,alle,NOUN,alles,NOUN,True,
+de,47,10,zur,ADP,zu,ADP,zur,ADP,True,
+de,47,11,richtigen,ADJ,richtig,ADV,richtigen,ADV,True,
+de,47,12,Zeit,NOUN,Zeit,NOUN,Zeit,NOUN,True,
+de,47,13,erfahren,VERB,erfahren,VERB,erfahren,VERB,True,
+de,47,14,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,65,0,Hier,ADV,hier,X,Hier,OTHER,False,No JSON list found in model output
+de,65,1,schien,VERB,scheinen,X,schien,OTHER,False,No JSON list found in model output
+de,65,2,ihm,PRON,ihm,X,ihm,OTHER,False,No JSON list found in model output
+de,65,3,das,PRON,der,X,das,OTHER,False,No JSON list found in model output
+de,65,4,aber,ADV,aber,X,aber,OTHER,False,No JSON list found in model output
+de,65,5,nicht,PART,nicht,X,nicht,OTHER,False,No JSON list found in model output
+de,65,6,richtig,ADV,richtig,X,richtig,OTHER,False,No JSON list found in model output
+de,65,7,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,8,man,PRON,man,X,man,OTHER,False,No JSON list found in model output
+de,65,9,konnte,AUX,können,X,konnte,OTHER,False,No JSON list found in model output
+de,65,10,zwar,ADV,zwar,X,zwar,OTHER,False,No JSON list found in model output
+de,65,11,das,DET,der,X,das,OTHER,False,No JSON list found in model output
+de,65,12,Ganze,NOUN,ganze,X,Ganze,OTHER,False,No JSON list found in model output
+de,65,13,als,ADP,als,X,als,OTHER,False,No JSON list found in model output
+de,65,14,Spaß,NOUN,Spaß,X,Spaß,OTHER,False,No JSON list found in model output
+de,65,15,ansehn,ADV,ansehn,X,ansehn,OTHER,False,No JSON list found in model output
+de,65,16,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,17,als,SCONJ,als,X,als,OTHER,False,No JSON list found in model output
+de,65,18,einen,DET,ein,X,einen,OTHER,False,No JSON list found in model output
+de,65,19,groben,ADJ,grob,X,groben,OTHER,False,No JSON list found in model output
+de,65,20,Spaß,NOUN,Spaß,X,Spaß,OTHER,False,No JSON list found in model output
+de,65,21,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,22,den,PRON,der,X,den,OTHER,False,No JSON list found in model output
+de,65,23,ihm,PRON,ihm,X,ihm,OTHER,False,No JSON list found in model output
+de,65,24,aus,ADP,aus,X,aus,OTHER,False,No JSON list found in model output
+de,65,25,unbekannten,ADJ,unbekannt,X,unbekannten,OTHER,False,No JSON list found in model output
+de,65,26,Gründen,NOUN,Grund,X,Gründen,OTHER,False,No JSON list found in model output
+de,65,27,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,28,vielleicht,ADV,vielleicht,X,vielleicht,OTHER,False,No JSON list found in model output
+de,65,29,weil,SCONJ,weil,X,weil,OTHER,False,No JSON list found in model output
+de,65,30,heute,ADV,heute,X,heute,OTHER,False,No JSON list found in model output
+de,65,31,sein,DET,sein,X,sein,OTHER,False,No JSON list found in model output
+de,65,32,dreißigster,ADJ,dreißigst,X,dreißigster,OTHER,False,No JSON list found in model output
+de,65,33,Geburtstag,NOUN,Geburtstag,X,Geburtstag,OTHER,False,No JSON list found in model output
+de,65,34,war,AUX,sein,X,war,OTHER,False,No JSON list found in model output
+de,65,35,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,36,die,DET,der,X,die,OTHER,False,No JSON list found in model output
+de,65,37,Kollegen,NOUN,Kollege,X,Kollegen,OTHER,False,No JSON list found in model output
+de,65,38,in,ADP,in,X,in,OTHER,False,No JSON list found in model output
+de,65,39,der,DET,der,X,der,OTHER,False,No JSON list found in model output
+de,65,40,Bank,NOUN,Bank,X,Bank,OTHER,False,No JSON list found in model output
+de,65,41,veranstaltet,VERB,veranstalten,X,veranstaltet,OTHER,False,No JSON list found in model output
+de,65,42,hatten,AUX,haben,X,hatten,OTHER,False,No JSON list found in model output
+de,65,43,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,44,es,PRON,es,X,es,OTHER,False,No JSON list found in model output
+de,65,45,war,AUX,sein,X,war,OTHER,False,No JSON list found in model output
+de,65,46,natürlich,ADV,natürlich,X,natürlich,OTHER,False,No JSON list found in model output
+de,65,47,möglich,ADV,möglich,X,möglich,OTHER,False,No JSON list found in model output
+de,65,48,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,49,vielleicht,ADV,vielleicht,X,vielleicht,OTHER,False,No JSON list found in model output
+de,65,50,brauchte,VERB,brauchen,X,brauchte,OTHER,False,No JSON list found in model output
+de,65,51,er,PRON,er,X,er,OTHER,False,No JSON list found in model output
+de,65,52,nur,ADV,nur,X,nur,OTHER,False,No JSON list found in model output
+de,65,53,auf,ADP,auf,X,auf,OTHER,False,No JSON list found in model output
+de,65,54,irgendeine,DET,irgendein,X,irgendeine,OTHER,False,No JSON list found in model output
+de,65,55,Weise,NOUN,Weise,X,Weise,OTHER,False,No JSON list found in model output
+de,65,56,den,DET,der,X,den,OTHER,False,No JSON list found in model output
+de,65,57,Wächtern,NOUN,Wächter,X,Wächtern,OTHER,False,No JSON list found in model output
+de,65,58,ins,ADP,in,X,ins,OTHER,False,No JSON list found in model output
+de,65,59,Gesicht,NOUN,Gesicht,X,Gesicht,OTHER,False,No JSON list found in model output
+de,65,60,zu,PART,zu,X,zu,OTHER,False,No JSON list found in model output
+de,65,61,lachen,VERB,lachen,X,lachen,OTHER,False,No JSON list found in model output
+de,65,62,und,CCONJ,und,X,und,OTHER,False,No JSON list found in model output
+de,65,63,sie,PRON,sie,X,sie,OTHER,False,No JSON list found in model output
+de,65,64,würden,AUX,werden,X,würden,OTHER,False,No JSON list found in model output
+de,65,65,mitlachen,VERB,mitlachen,X,mitlachen,OTHER,False,No JSON list found in model output
+de,65,66,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,67,vielleicht,ADV,vielleicht,X,vielleicht,OTHER,False,No JSON list found in model output
+de,65,68,waren,AUX,sein,X,waren,OTHER,False,No JSON list found in model output
+de,65,69,es,PRON,es,X,es,OTHER,False,No JSON list found in model output
+de,65,70,Dienstmänner,NOUN,dienstmänner,X,Dienstmänner,OTHER,False,No JSON list found in model output
+de,65,71,von,ADP,von,X,von,OTHER,False,No JSON list found in model output
+de,65,72,der,DET,der,X,der,OTHER,False,No JSON list found in model output
+de,65,73,Straßenecke,NOUN,Straßenecke,X,Straßenecke,OTHER,False,No JSON list found in model output
+de,65,74,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,75,sie,PRON,sie,X,sie,OTHER,False,No JSON list found in model output
+de,65,76,sahen,VERB,sehen,X,sahen,OTHER,False,No JSON list found in model output
+de,65,77,ihnen,PRON,ihnen,X,ihnen,OTHER,False,No JSON list found in model output
+de,65,78,nicht,PART,nicht,X,nicht,OTHER,False,No JSON list found in model output
+de,65,79,unähnlich,ADV,unähnlich,X,unähnlich,OTHER,False,No JSON list found in model output
+de,65,80,—,PUNCT,--,X,—,OTHER,False,No JSON list found in model output
+de,65,81,trotzdem,ADV,trotzdem,X,trotzdem,OTHER,False,No JSON list found in model output
+de,65,82,war,AUX,sein,X,war,OTHER,False,No JSON list found in model output
+de,65,83,er,PRON,er,X,er,OTHER,False,No JSON list found in model output
+de,65,84,diesmal,ADV,diesmal,X,diesmal,OTHER,False,No JSON list found in model output
+de,65,85,förmlich,ADV,förmlich,X,förmlich,OTHER,False,No JSON list found in model output
+de,65,86,schon,ADV,schon,X,schon,OTHER,False,No JSON list found in model output
+de,65,87,seit,ADP,seit,X,seit,OTHER,False,No JSON list found in model output
+de,65,88,dem,DET,der,X,dem,OTHER,False,No JSON list found in model output
+de,65,89,ersten,ADJ,erster,X,ersten,OTHER,False,No JSON list found in model output
+de,65,90,Anblick,NOUN,Anblick,X,Anblick,OTHER,False,No JSON list found in model output
+de,65,91,des,DET,der,X,des,OTHER,False,No JSON list found in model output
+de,65,92,Wächters,NOUN,Wächter,X,Wächters,OTHER,False,No JSON list found in model output
+de,65,93,Franz,PROPN,Franz,X,Franz,OTHER,False,No JSON list found in model output
+de,65,94,entschlossen,VERB,entschließen,X,entschlossen,OTHER,False,No JSON list found in model output
+de,65,95,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,96,nicht,PART,nicht,X,nicht,OTHER,False,No JSON list found in model output
+de,65,97,den,DET,der,X,den,OTHER,False,No JSON list found in model output
+de,65,98,geringsten,ADJ,gering,X,geringsten,OTHER,False,No JSON list found in model output
+de,65,99,Vorteil,NOUN,Vorteil,X,Vorteil,OTHER,False,No JSON list found in model output
+de,65,100,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,101,den,PRON,der,X,den,OTHER,False,No JSON list found in model output
+de,65,102,er,PRON,er,X,er,OTHER,False,No JSON list found in model output
+de,65,103,vielleicht,ADV,vielleicht,X,vielleicht,OTHER,False,No JSON list found in model output
+de,65,104,gegenüber,ADP,gegenüber,X,gegenüber,OTHER,False,No JSON list found in model output
+de,65,105,diesen,DET,dieser,X,diesen,OTHER,False,No JSON list found in model output
+de,65,106,Leuten,NOUN,Leute,X,Leuten,OTHER,False,No JSON list found in model output
+de,65,107,besaß,VERB,besitzen,X,besaß,OTHER,False,No JSON list found in model output
+de,65,108,",",PUNCT,--,X,",",OTHER,False,No JSON list found in model output
+de,65,109,aus,ADP,aus,X,aus,OTHER,False,No JSON list found in model output
+de,65,110,der,DET,der,X,der,OTHER,False,No JSON list found in model output
+de,65,111,Hand,NOUN,Hand,X,Hand,OTHER,False,No JSON list found in model output
+de,65,112,zu,PART,zu,X,zu,OTHER,False,No JSON list found in model output
+de,65,113,geben,VERB,geben,X,geben,OTHER,False,No JSON list found in model output
+de,65,114,.,PUNCT,--,X,.,OTHER,False,No JSON list found in model output
+de,66,0,Darin,ADV,darin,PROPN,Darin,PROPN,True,
+de,66,1,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,2,daß,SCONJ,daß,VERB,daß,VERB,True,
+de,66,3,man,PRON,man,NOUN,man,NOUN,True,
+de,66,4,später,ADV,spät,ADV,später,ADV,True,
+de,66,5,sagen,VERB,sagen,VERB,sagen,VERB,True,
+de,66,6,würde,AUX,werden,VERB,würde,VERB,True,
+de,66,7,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,8,er,PRON,er,PRON,er,PRON,True,
+de,66,9,habe,AUX,haben,VERB,habe,VERB,True,
+de,66,10,keinen,DET,kein,NOUN,keinen,NOUN,True,
+de,66,11,Spaß,NOUN,Spaß,NOUN,Spaß,NOUN,True,
+de,66,12,verstanden,VERB,verstehen,VERB,verstanden,VERB,True,
+de,66,13,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,14,sah,VERB,sehen,PRON,sah,PRON,True,
+de,66,15,K.,PROPN,K.,PROPN,K.,PROPN,True,
+de,66,16,eine,DET,ein,DET,eine,DET,True,
+de,66,17,ganz,ADV,ganz,ADJ,ganz,ADJ,True,
+de,66,18,geringe,ADJ,gering,ADJ,geringe,ADJ,True,
+de,66,19,Gefahr,NOUN,Gefahr,NOUN,Gefahr,NOUN,True,
+de,66,20,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,21,wohl,ADV,wohl,DET,wohl,DET,True,
+de,66,22,aber,ADV,aber,CONJ,aber,OTHER,True,
+de,66,23,erinnerte,VERB,erinnern,VERB,erinnerte,VERB,True,
+de,66,24,er,PRON,er,PRON,er,PRON,True,
+de,66,25,sich,PRON,sich,PRON,sich,PRON,True,
+de,66,26,—,PUNCT,--,PUNCT,---,PUNCT,True,
+de,66,27,ohne,ADP,ohne,ADP,ohne,ADP,True,
+de,66,28,daß,SCONJ,daß,VERB,daß,VERB,True,
+de,66,29,es,PRON,es,PRON,es,PRON,True,
+de,66,30,sonst,ADV,sonst,CONJ,sonst,OTHER,True,
+de,66,31,seine,DET,sein,DET,seine,DET,True,
+de,66,32,Gewohnheit,NOUN,Gewohnheit,NOUN,Gewohnheit,NOUN,True,
+de,66,33,gewesen,AUX,sein,VERB,gewesen,VERB,True,
+de,66,34,wäre,AUX,sein,VERB,wäre,VERB,True,
+de,66,35,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,36,aus,ADP,aus,ADP,aus,ADP,True,
+de,66,37,Erfahrungen,NOUN,Erfahrung,NOUN,Erfahrungen,NOUN,True,
+de,66,38,zu,PART,zu,ADP,zu,ADP,True,
+de,66,39,lernen,VERB,lernen,VERB,lernen,VERB,True,
+de,66,40,—,PUNCT,--,PUNCT,---,PUNCT,True,
+de,66,41,an,ADP,an,ADP,an,ADP,True,
+de,66,42,einige,PRON,einige,DET,einige,DET,True,
+de,66,43,an,ADP,an,ADP,an,ADP,True,
+de,66,44,sich,PRON,sich,PRON,sich,PRON,True,
+de,66,45,unbedeutende,ADJ,unbedeutend,ADJ,unbedeutende,ADJ,True,
+de,66,46,Fälle,NOUN,Fall,NOUN,Fälle,NOUN,True,
+de,66,47,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,48,in,ADP,in,ADP,in,ADP,True,
+de,66,49,denen,PRON,der,DET,denen,DET,True,
+de,66,50,er,PRON,er,PRON,er,PRON,True,
+de,66,51,zum,ADP,zu,ADP,zum,ADP,True,
+de,66,52,Unterschied,NOUN,Unterschied,NOUN,Unterschied,NOUN,True,
+de,66,53,von,ADP,von,ADP,von,ADP,True,
+de,66,54,seinen,DET,sein,DET,seinen,DET,True,
+de,66,55,Freunden,NOUN,Freund,NOUN,Freunde,NOUN,True,
+de,66,56,mit,ADP,mit,ADP,mit,ADP,True,
+de,66,57,Bewußtsein,NOUN,Bewußtsein,NOUN,Bewußtsein,NOUN,True,
+de,66,58,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,66,59,ohne,ADP,ohne,ADP,ohne,ADP,True,
+de,66,60,das,DET,der,DET,das,DET,True,
+de,66,61,geringste,ADJ,gering,NOUN,geringste,NOUN,True,
+de,66,62,Gefühl,NOUN,Gefühl,NOUN,Gefühl,NOUN,True,
+de,66,63,für,ADP,für,ADP,für,ADP,True,
+de,66,64,die,DET,der,DET,die,DET,True,
+de,66,65,möglichen,ADJ,möglich,NOUN,möglichen,NOUN,True,
+de,66,66,Folgen,NOUN,Folge,NOUN,Folgen,NOUN,True,
+de,66,67,sich,PRON,sich,PRON,sich,PRON,True,
+de,66,68,unvorsichtig,ADV,unvorsichtig,ADJ,unvorsichtig,ADJ,True,
+de,66,69,benommen,VERB,benommen,VERB,benommen,VERB,True,
+de,66,70,hatte,AUX,haben,VERB,hatte,VERB,True,
+de,66,71,und,CCONJ,und,CONJ,und,OTHER,True,
+de,66,72,dafür,ADV,dafür,PRON,dafür,PRON,True,
+de,66,73,durch,ADP,durch,ADP,durch,ADP,True,
+de,66,74,das,DET,der,DET,das,DET,True,
+de,66,75,Ergebnis,NOUN,Ergebnis,NOUN,Ergebnis,NOUN,True,
+de,66,76,gestraft,VERB,strafen,VERB,gestraft,VERB,True,
+de,66,77,worden,AUX,werden,VERB,worden,VERB,True,
+de,66,78,war,AUX,sein,VERB,war,VERB,True,
+de,66,79,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,84,0,„,PUNCT,--,PUNCT,,PUNCT,True,
+de,84,1,Sie,PRON,sie,PRON,Sie,PRON,True,
+de,84,2,werden,AUX,werden,VERB,werden,VERB,True,
+de,84,3,sie,PRON,sie,PRON,sie,PRON,True,
+de,84,4,beantworten,VERB,beantworten,VERB,beantworten,VERB,True,
+de,84,5,müssen,AUX,müssen,AUX,müssen,AUX,True,
+de,84,6,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,84,7,“,PUNCT,--,PUNCT,,PUNCT,True,
+de,84,8,sagte,VERB,sagen,VERB,sagte,VERB,True,
+de,84,9,K.,PROPN,K.,PART,K.,PART,True,
+de,84,10,„,PUNCT,--,PUNCT,,PUNCT,True,
+de,84,11,Hier,ADV,hier,ADJ,Hier,ADJ,True,
+de,84,12,sind,AUX,sein,VERB,sind,VERB,True,
+de,84,13,meine,DET,mein,PRON,meine,PRON,True,
+de,84,14,Legitimationspapiere,NOUN,Legitimationspapier,NOUN,Legitimationspapiere,NOUN,True,
+de,84,15,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,84,16,zeigen,VERB,zeigen,VERB,zeigen,VERB,True,
+de,84,17,Sie,PRON,sie,PRON,Sie,PRON,True,
+de,84,18,mir,PRON,mir,ADP,mir,ADP,True,
+de,84,19,jetzt,ADV,jetzt,ADV,jetzt,ADV,True,
+de,84,20,die,DET,der,NOUN,die,NOUN,True,
+de,84,21,Ihrigen,NOUN,Ihrigen,PRON,Ihrigen,PRON,True,
+de,84,22,und,CCONJ,und,CONJ,und,OTHER,True,
+de,84,23,vor,ADP,vor,ADV,vor,ADV,True,
+de,84,24,allem,PRON,alle,ADJ,allem,ADJ,True,
+de,84,25,den,DET,der,NOUN,den,NOUN,True,
+de,84,26,Verhaftbefehl,NOUN,Verhaftbefehl,NOUN,Verhaftbefehl,NOUN,True,
+de,84,27,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,84,28,“,PUNCT,--,PUNCT,,PUNCT,True,
+de,107,0,Ihre,DET,ihr,PROPN,Ihre,PROPN,True,
+de,107,1,Sicherheit,NOUN,Sicherheit,NOUN,Sicherheit,NOUN,True,
+de,107,2,ist,AUX,sein,VERB,ist,VERB,True,
+de,107,3,nur,ADV,nur,ADV,nur,ADV,True,
+de,107,4,durch,ADP,durch,ADP,durch,ADP,True,
+de,107,5,ihre,DET,ihr,PROPN,ihre,PROPN,True,
+de,107,6,Dummheit,NOUN,Dummheit,NOUN,Dummheit,NOUN,True,
+de,107,7,möglich,ADV,möglich,ADV,möglich,ADV,True,
+de,107,8,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,123,0,Sollte,AUX,sollen,ADV,Sollte,ADV,True,
+de,123,1,er,PRON,er,ADP,er,ADP,True,
+de,123,2,die,DET,der,DET,die,DET,True,
+de,123,3,wirkliche,ADJ,wirklich,ADJ,wirkliche,ADJ,True,
+de,123,4,Entschuldigung,NOUN,Entschuldigung,PROPN,Entschuldigung,PROPN,True,
+de,123,5,anführen,VERB,anführen,VERB,anführen,VERB,True,
+de,123,6,?,PUNCT,--,PUNCT,?,PUNCT,True,
+de,134,0,Es,PRON,es,PRON,es,PRON,True,
+de,134,1,war,AUX,sein,VERB,war,VERB,True,
+de,134,2,nur,ADV,nur,ADJ,nur,ADJ,True,
+de,134,3,das,DET,der,DET,das,DET,True,
+de,134,4,Schreien,NOUN,schreien,NOUN,Schreien,NOUN,True,
+de,134,5,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,134,6,das,PRON,der,DET,das,DET,True,
+de,134,7,ihn,PRON,ihn,PRON,ihn,PRON,True,
+de,134,8,erschreckte,VERB,erschrecken,VERB,erschreckte,VERB,True,
+de,134,9,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,134,10,dieses,DET,dieser,DET,dieses,DET,True,
+de,134,11,kurze,ADJ,kurz,ADJ,kurze,ADJ,True,
+de,134,12,abgehackte,ADJ,abgehackt,NOUN,abgehackte,NOUN,True,
+de,134,13,militärische,ADJ,militärisch,ADJ,militärische,ADJ,True,
+de,134,14,Schreien,NOUN,schreien,NOUN,Schreien,NOUN,True,
+de,134,15,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,134,16,das,PRON,der,DET,das,DET,True,
+de,134,17,er,PRON,er,PRON,er,PRON,True,
+de,134,18,dem,DET,der,PRON,dem,PRON,True,
+de,134,19,Wächter,NOUN,Wächter,NOUN,Wächter,NOUN,True,
+de,134,20,Franz,PROPN,Franz,PROPN,Franz,PROPN,True,
+de,134,21,gar,ADV,gar,ADJ,gar,ADJ,True,
+de,134,22,nicht,PART,nicht,ADV,nicht,ADV,True,
+de,134,23,zugetraut,VERB,zutrauen,ADJ,zugetraut,ADJ,True,
+de,134,24,hätte,AUX,haben,VERB,hätte,VERB,True,
+de,134,25,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,148,0,„,PUNCT,--,PUNCT,,PUNCT,True,
+de,148,1,Wenn,SCONJ,wenn,ADV,Wenn,ADV,True,
+de,148,2,ich,PRON,ich,PRON,ich,PRON,True,
+de,148,3,dadurch,ADV,dadurch,ADJ,dadurch,ADJ,True,
+de,148,4,die,DET,der,DET,die,DET,True,
+de,148,5,Sache,NOUN,Sache,NOUN,Sache,NOUN,True,
+de,148,6,beschleunige,VERB,beschleunigen,VERB,beschleunige,VERB,True,
+de,148,7,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,8,soll,AUX,sollen,AUX,soll,AUX,True,
+de,148,9,es,PRON,es,PRON,es,PRON,True,
+de,148,10,mir,PRON,mir,PRON,mir,PRON,True,
+de,148,11,recht,ADV,Recht,ADJ,recht,ADJ,True,
+de,148,12,sein,AUX,sein,VERB,sein,VERB,True,
+de,148,13,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,14,“,PUNCT,--,PUNCT,,PUNCT,True,
+de,148,15,sagte,VERB,sagen,VERB,sagte,VERB,True,
+de,148,16,K.,PROPN,K.,PROPN,K.,PROPN,True,
+de,148,17,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,18,öffnete,VERB,öffnen,VERB,öffnete,VERB,True,
+de,148,19,selbst,ADV,selbst,ADJ,selbst,ADJ,True,
+de,148,20,den,DET,der,DET,den,DET,True,
+de,148,21,Kleiderkasten,NOUN,Kleiderkasten,NOUN,Kleiderkasten,NOUN,True,
+de,148,22,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,23,suchte,VERB,suchen,VERB,suchte,VERB,True,
+de,148,24,lange,ADV,lange,ADJ,lange,ADJ,True,
+de,148,25,unter,ADP,unter,ADV,unter,ADV,True,
+de,148,26,den,DET,der,DET,den,DET,True,
+de,148,27,vielen,DET,vieler,NOUN,vielen,NOUN,True,
+de,148,28,Kleidern,NOUN,Kleid,NOUN,Kleidern,NOUN,True,
+de,148,29,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,30,wählte,VERB,wählen,VERB,wählte,VERB,True,
+de,148,31,sein,DET,sein,VERB,sein,VERB,True,
+de,148,32,bestes,ADJ,be,ADJ,bestes,ADJ,True,
+de,148,33,schwarzes,ADJ,schwarz,ADJ,schwarzes,ADJ,True,
+de,148,34,Kleid,NOUN,Kleid,NOUN,Kleid,NOUN,True,
+de,148,35,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,36,ein,DET,ein,DET,ein,DET,True,
+de,148,37,Jackettkleid,NOUN,Jackettkleid,NOUN,Jackettkleid,NOUN,True,
+de,148,38,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,39,das,PRON,der,DET,das,DET,True,
+de,148,40,durch,ADP,durch,PREP,durch,OTHER,True,
+de,148,41,seine,DET,sein,PRON,seine,PRON,True,
+de,148,42,Taille,NOUN,Taille,NOUN,Taille,NOUN,True,
+de,148,43,unter,ADP,unter,ADV,unter,ADV,True,
+de,148,44,den,DET,der,PREP,den,OTHER,True,
+de,148,45,Bekannten,NOUN,bekannte,PRON,Bekannten,PRON,True,
+de,148,46,fast,ADV,fast,ADJ,fast,ADJ,True,
+de,148,47,Aufsehen,NOUN,Aufsehen,NOUN,Aufsehen,NOUN,True,
+de,148,48,gemacht,VERB,machen,VERB,gemacht,VERB,True,
+de,148,49,hatte,AUX,haben,VERB,hatte,VERB,True,
+de,148,50,",",PUNCT,--,PUNCT,",",PUNCT,True,
+de,148,51,zog,VERB,ziehen,VERB,zog,VERB,True,
+de,148,52,nun,ADV,nun,ADJ,nun,ADJ,True,
+de,148,53,auch,ADV,auch,CONJ,auch,OTHER,True,
+de,148,54,ein,DET,ein,DET,ein,DET,True,
+de,148,55,anderes,ADJ,anderer,NOUN,anderes,NOUN,True,
+de,148,56,Hemd,NOUN,Hemd,NOUN,Hemd,NOUN,True,
+de,148,57,hervor,ADV,hervor,ADV,hervor,ADV,True,
+de,148,58,und,CCONJ,und,CONJ,und,OTHER,True,
+de,148,59,begann,VERB,beginnen,VERB,begann,VERB,True,
+de,148,60,sich,PRON,sich,VERB,sich,VERB,True,
+de,148,61,sorgfältig,ADV,sorgfältig,ADJ,sorgfältig,ADJ,True,
+de,148,62,anzuziehn,VERB,anzuziehn,VERB,anzuziehn,VERB,True,
+de,148,63,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,153,0,Jetzt,ADV,jetzt,ADV,Jetzt,ADV,True,
+de,153,1,war,AUX,sein,VERB,war,VERB,True,
+de,153,2,das,DET,der,DET,das,DET,True,
+de,153,3,Nachttischchen,NOUN,Nachttischchen,NOUN,Nachttischchen,NOUN,True,
+de,153,4,von,ADP,von,ADP,von,ADP,True,
+de,153,5,ihrem,DET,ihr,PROPN,ihrem,PROPN,True,
+de,153,6,Bett,NOUN,Bett,NOUN,Bett,NOUN,True,
+de,153,7,als,ADP,als,CCONJ,als,CCONJ,True,
+de,153,8,Verhandlungstisch,NOUN,Verhandlungstisch,NOUN,Verhandlungstisch,NOUN,True,
+de,153,9,in,ADP,in,ADP,in,ADP,True,
+de,153,10,die,DET,der,DET,die,DET,True,
+de,153,11,Mitte,NOUN,Mitte,INTJ,Mitte,INTJ,True,
+de,153,12,des,DET,der,DET,des,DET,True,
+de,153,13,Zimmers,NOUN,Zimmer,NOUN,Zimmers,NOUN,True,
+de,153,14,gerückt,VERB,rücken,VERB,gerückt,VERB,True,
+de,153,15,und,CCONJ,und,CONJ,und,OTHER,True,
+de,153,16,der,DET,der,DET,der,DET,True,
+de,153,17,Aufseher,NOUN,Aufseher,NOUN,Aufseher,NOUN,True,
+de,153,18,saß,VERB,sitzen,VERB,saß,VERB,True,
+de,153,19,hinter,ADP,hinter,ADP,hinter,ADP,True,
+de,153,20,ihm,PRON,ihm,PROPN,ihm,PROPN,True,
+de,153,21,.,PUNCT,--,PUNCT,.,PUNCT,True,
+de,158,0,„,PUNCT,--,PUNCT,,PUNCT,True,
+de,158,1,Josef,PROPN,Josef,PROPN,Josef,PROPN,True,
+de,158,2,K,PROPN,K,ADJ,K,ADJ,True,
+de,158,3,?,PUNCT,--,AUX,?,AUX,True,
+de,158,4,“,PUNCT,--,PUNCT,,PUNCT,True,
+de,158,5,fragte,VERB,fragen,VERB,fragte,VERB,True,
+de,158,6,der,DET,der,DET,der,DET,True,
+de,158,7,Aufseher,NOUN,Aufseher,NOUN,Aufseher,NOUN,True,
+de,158,8,",",PUNCT,--,ADP,",",ADP,True,
+de,158,9,vielleicht,ADV,vielleicht,ADV,vielleicht,ADV,True,
+de,158,10,nur,ADV,nur,CONJ,nur,OTHER,True,
+de,158,11,um,ADP,um,ADV,um,ADV,True,
+de,158,12,K.s,PROPN,K.s,PROPN,K.s,PROPN,True,
+de,158,13,zerstreute,ADJ,zerstreut,ADJ,zerstreute,ADJ,True,
+de,158,14,Blicke,NOUN,Blick,NOUN,Blicke,NOUN,True,
+de,158,15,auf,ADP,auf,ADV,auf,ADV,True,
+de,158,16,sich,PRON,sich,PRON,sich,PRON,True,
+de,158,17,zu,PART,zu,ADP,zu,ADP,True,
+de,158,18,lenken,VERB,lenken,VERB,lenken,VERB,True,
+de,158,19,.,PUNCT,--,PUNCT,.,PUNCT,True,
